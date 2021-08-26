@@ -1,0 +1,26 @@
+port: 5001
+database:
+  sql: 
+    driver: "postgressql"
+    address: "127.0.0.1"
+    port: 5432
+    username: "postgres"
+    password: "root"
+    name: "insanulab"
+  nosql: 
+    driver: "couchdb" #possible value are mongodb or mysql
+    address: "127.0.0.1"
+    port: 5984
+    username: "root"
+    password: "root"
+    name: ""
+cache:
+  driver: "redis"
+  address: "127.0.0.1"
+  port: 6379
+  password: ""
+  dbnumber: 1
+endpoint:
+  auth: "http://127.0.0.1:5000"
+  commodities: "https://stein.insanulab.com/"
+  convert_currency: "https://free.currconv.com"
